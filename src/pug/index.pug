@@ -1,6 +1,5 @@
 doctype html
-html(lang='en')
-
+html(lang='en')                     
     head
 
         meta(charset='utf-8')
@@ -8,7 +7,7 @@ html(lang='en')
         meta(name='description', content='')
         meta(name='author', content='')
 
-        title Business Casual - Start Bootstrap Theme
+        title ATCUW - Home
 
         link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
 
@@ -20,29 +19,32 @@ html(lang='en')
 
         include includes/navbar
 
+        section.page-section.about-heading
+            .container
+                .about-heading-content
+                    .row
+                        .col-xl-9.col-lg-10.mx-auto
+                            .bg-faded.rounded.p-5
+                                h2.section-heading.mb-4
+                                    span.section-heading-lower News
+                                p
+                                    | Important news will be placed here in the future
+                                p
+                                    | The algorithmic trading club is a club dedicated to teaching students of UW the core of quantitative finance, 
+                                    | including topics that range from programming, statistics, and finance. Follow us at our #[a(href='socials.html') social media]
+            
+
         section.page-section.clearfix
             .container
                 .intro
                     img.intro-img.img-fluid.mb-3.mb-lg-0.rounded(src='assets/img/intro.jpg', alt='...')
                     .intro-text.left-0.text-center.bg-faded.p-5.rounded
                         h2.section-heading.mb-4
-                            span.section-heading-upper Fresh Coffee
-                            span.section-heading-lower Worth Drinking
+                            span.section-heading-upper Learn Quant skills
                         p.mb-3
-                            | Every cup of our quality artisan coffee starts with locally sourced, hand picked ingredients. Once you try it, our coffee will be a blissful addition to your everyday morning routine - we guarantee it!
+                            | Gain skills in Python and its computing packages, QuantConnect, and more.
                         .intro-button.mx-auto
-                            a.btn.btn-primary.btn-xl(href='#!') Visit Us Today!
-
-        section.page-section.cta
-            .container
-                .row
-                    .col-xl-9.mx-auto
-                        .cta-inner.bg-faded.text-center.rounded
-                            h2.section-heading.mb-4
-                                span.section-heading-upper Our Promise
-                                span.section-heading-lower To You
-                            p.mb-0
-                                | When you walk into our shop to start your day, we are dedicated to providing you with friendly service, a welcoming atmosphere, and above all else, excellent products made with the highest quality ingredients. If you are not satisfied, please let us know and we will do whatever we can to make things right!
+                            a.btn.btn-primary.btn-xl(href='workshops.html') See our     past and upcoming workshops
 
         include includes/footer
 

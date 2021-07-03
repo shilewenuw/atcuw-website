@@ -10,7 +10,7 @@ p {
 }
 
 .text-faded {
-    color: lighten($primary, 25%);
+    color: $white;
 }
 
 .site-heading {
@@ -28,7 +28,7 @@ p {
 
     .site-heading-lower {
         font-size: 5rem;
-        font-weight: 100;
+        font-weight: 150;
         line-height: 4rem;
     }
 }
@@ -49,11 +49,17 @@ p {
 
     .section-heading-lower {
         display: block;
-        font-size: 3rem;
-        font-weight: 100;
+        font-size: 2rem;
+        font-weight: 300;
+    }
+
+    .section-heading-name {
+        display: block;
+        font-size: 1.5rem;
+        font-weight: 500;
     }
 }
 
 .bg-faded {
-    background-color: lighten($primary, 25%);
+    background-color: lighten($primary, 50%);
 }
